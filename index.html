@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>mvvm</title>
+    </head>
+    <body>
+        <div id="app">
+            <div>{{message}}</div>
+            <input type="text" c-model='message' />
+        </div>
+    <script src="cvue.js"></script>
+    <script>
+        let vm = new Cvue({
+            el: '#app',
+            data: {
+                message: 'mvvm'
+            }
+        })
+        console.log(vm.data.message)
+    </script>
+    </body>
+</html>
